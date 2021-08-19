@@ -7,7 +7,11 @@ Caused by:
   process didn't exit successfully: `/home/club/dot/substrate-node-template-05/target/release/build/librocksdb-sys-639b105735bcdfc6/build-script-build` (exit status: 101)
   --- stderr
   rocksdb/include/rocksdb/c.h:45:9: warning: #pragma once in main file, err: false
-  thread 'main' panicked at '`libclang` function not loaded: `clang_Type_getNumTemplateArguments`. This crate requires that `libclang` 3.9 or later be installed on your system. For more information on how to accomplish this, see here: https://rust-lang.github.io/rust-bindgen/requirements.html#installing-clang-39', /home/club/.cargo/registry/src/github.com-1ecc6299db9ec823/clang-sys-1.2.0/src/lib.rs:1682:1
+  thread 'main' panicked at '`libclang` function not loaded: `clang_Type_getNumTemplateArguments`. 
+  This crate requires that `libclang` 3.9 or later be installed on your system. 
+  For more information on how to accomplish this, 
+  see here: https://rust-lang.github.io/rust-bindgen/requirements.html#installing-clang-39', 
+  /home/club/.cargo/registry/src/github.com-1ecc6299db9ec823/clang-sys-1.2.0/src/lib.rs:1682:1
   note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 warning: build failed, waiting for other jobs to finish...
 error: build failed
