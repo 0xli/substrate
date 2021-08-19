@@ -1,5 +1,18 @@
 ### 1. libclang needed newer than 3.9.1
 #### 1.1 error
+Unable to find libclang
+```
+error: failed to run custom build command for `librocksdb-sys v6.17.3`
+
+Caused by:
+  process didn't exit successfully: `/home/club/dot/substrate-node-template-05/target/release/build/librocksdb-sys-639b105735bcdfc6/build-script-build` (exit status: 101)
+  --- stderr
+  thread 'main' panicked at 'Unable to find libclang: "the `libclang` shared library at /usr/lib64/clang-private/libclang.so.7 could not be opened: libclangAST.so.7: cannot open shared object file: No such file or directory"', /home/club/.cargo/registry/src/github.com-1ecc6299db9ec823/bindgen-0.57.0/src/lib.rs:1975:31
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: build failed, waiting for other jobs to finish...
+error: build failed
+```
+Or the version of libclang is below 3.9
 ```
 error: failed to run custom build command for `librocksdb-sys v6.17.3`
 
